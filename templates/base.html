@@ -5,9 +5,9 @@
     <title>Tsilevart</title>
 </head>
 <body>
-    <h1>Methods: </h1>
-    {% for value in form %}
-        {% include value %}
-    {% endfor %}
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
 </body>
 </html>

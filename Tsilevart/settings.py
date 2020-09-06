@@ -127,3 +127,5 @@ OBTAINING_POINTS_METHODS = (
      'code_method.html',
 )
 
+LOGIN_REDIRECT_URL = '/tsilevart'
+LOGOUT_REDIRECT_URL = '/tsilevart'

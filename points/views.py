@@ -5,17 +5,17 @@ from .forms import CodeMethodForm
 
 
 class PaymentMethodView(TemplateView):
-    template_name = "points_method.html"
+    template_name = "home.html"
 
     def get(self, request, *args, **kwargs):
-        return render(request, self.template_name, {'form': OBTAINING_POINTS_METHODS})
+        return render(request, self.template_name, {"form": OBTAINING_POINTS_METHODS})
 
 
 class CodeMethodView(TemplateView):
     form_class = CodeMethodForm
-    template_name = "points_method.html"
+    template_name = "home.html"
 
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
         if form.is_valid():
-            return render(request, self.template_name, {'form': OBTAINING_POINTS_METHODS})
+            return render(request, self.template_name, {"form": OBTAINING_POINTS_METHODS})

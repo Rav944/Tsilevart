@@ -3,6 +3,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('obtaining_points_methods/', include('points.urls')),
-    path('admin/', admin.site.urls),
+    path("tsilevart/", include("points.urls")),
+    path("accounts/", include("django.contrib.auth.urls")),
+    path("admin/", admin.site.urls),
 ]
