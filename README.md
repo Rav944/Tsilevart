@@ -15,3 +15,13 @@ pip install -r requirements.txt
 http://127.0.0.1:8000/tsilevart/users/ -> users list
 
 http://127.0.0.1:8000/tsilevart/users/<pk> -> single user(you can also update points here)
+  
+  
+To Do:
+
+  1.Test
+
+  2.Pagination
+
+  3.Nicer information about a successful user update
+
