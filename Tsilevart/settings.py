@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'points'
+    'points',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -122,10 +123,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
-OBTAINING_POINTS_METHODS = (
-     'code_method.html',
-)
-
-LOGIN_REDIRECT_URL = '/tsilevart'
-LOGOUT_REDIRECT_URL = '/tsilevart'

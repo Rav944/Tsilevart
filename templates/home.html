@@ -1,15 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    {% if user.is_authenticated %}
-        <h2>User: {{ user.username }}  Points: {{ user.profile.points}}</h2>
-        <h3>Methods: </h3>
-        {% for value in form %}
-            {% include value %}
-        {% endfor %}
-        <p><a href="{% url 'logout' %}">logout</a></p>
-    {% else %}
-      <h2>You are not logged in</h2>
-      <h3><a href="{% url 'login' %}">login</a></h3>
-    {% endif %}
+    <h3>Users: </h3>
+    <ul>
+    {% for value in data %}
+        <li>
+            <b>ID: </b><a href="{{ value.pk }}">{{ value.pk }}</a>
+            <b>Username: </b>{{ value.username }}
+            <b>First Name: </b>{{ value.first_name }}
+            <b>Last Name: </b>{{ value.last_name }}
+            <b>Email: </b>{{ value.email }}
+            <b>Points: </b>{{ value.profile.points }}
+        </li>
+    {% endfor %}
+    </ul>
 {% endblock %}
