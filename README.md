@@ -24,4 +24,6 @@ To Do:
   2.Pagination
 
   3.Nicer information about a successful user update
+  
+  4.Dockerization
 
